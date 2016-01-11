@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css" />
 
 </head>
-<body>
+<!-- Remove this documentation class in production -->
+<body class="documentation">
     <div class="container" id="main-content">
         <div class="row">
             <div class="col-xs-12 logo">
@@ -86,6 +87,42 @@
                             </label>
                         </div>
                     </div>
+                    <!-- Here's an example of a checkboxes -->
+                    <div class="form-group">
+                        <label for="select-one">3. Select all that apply:</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> First one
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Second one
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Third one
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Fourth one
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Here's an example of a select list -->
+                    <div class="form-group">
+                        <label for="select-one">4. Select one from the following:</label>
+                        <div class="form-element"> <!-- This .form-element div will put the select list on a seperate line, instead of inline with the label. --> 
+                            <select name="select-one" id="">
+                                <option value="1">First one</option>
+                                <option value="2">Second one</option>
+                                <option value="2">Third one</option>
+                                <option value="2">Fourth one</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-primary" value="Submit Survey" />                        
                     </div>
@@ -102,6 +139,66 @@
                         <span class="sr-only">90% Complete</span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <h3>Color Scheme</h3>
+        <hr />
+        <div class="row">
+            <div class="col-xs-12">
+                <p>I've included a sample color scheme from <a href="http://www.colourlovers.com/" target="_blank">http://www.colourlovers.com/</a>. Feel free to use it or don't.</p>
+            </div>
+        </div>
+        <div class="row colors">
+            <div class="col-xs-2">
+                <div class="red">
+                    <span>Red<br />#CC0C39</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="orange">
+                    <span>Orange<br />#E6781E</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="green">
+                    <span>Green<br />#E6781E</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="peach">
+                    <span>Peach<br />#E6781E</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="blue">
+                    <span>Blue<br />#E6781E</span>
+                </div>
+            </div>
+        </div>
+        <h3>Buttons</h3>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12 buttons">
+                <!-- Standard button -->
+                <button type="button" class="btn btn-default">Default Button</button>
+
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-primary">Primary Button</button>
+
+                <!-- Indicates a successful or positive action -->
+                <button type="button" class="btn btn-success">Success Button</button>
+
+                <!-- Contextual button for informational alert messages -->
+                <button type="button" class="btn btn-info">Info Button</button>
+
+                <!-- Indicates caution should be taken with this action -->
+                <button type="button" class="btn btn-warning">Warning Button</button>
+
+                <!-- Indicates a dangerous or potentially negative action -->
+                <button type="button" class="btn btn-danger">Danger Button</button>
+
+                <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                <button type="button" class="btn btn-link">Link</button>
             </div>
         </div>
         <hr>
