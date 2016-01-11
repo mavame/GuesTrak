@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestrak Example</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+    <div class="container" id="main-content">
+        <div class="row">
+            <div class="col-xs-12 logo">
+                <h1>GuesTrak<sup>&trade;</sup></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <form action="" id="enter-code">
+                    <div class="form-group">
+                        <label for="code">Please enter your Reciept Survey Code to begin the survey.</label>
+                        <input type="email" class="form-control" id="code" placeholder="Enter Survey Code">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Start Survey" />                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h3>Questions</h3>
+        <hr />
+        <div class="row">
+            <div class="col-xs-12">
+                <form action="" id="main-form">
+                    <!-- First Question -->                    
+                    <div class="form-group">
+                        <label for="overall">1. Overall, how did you feel about the experience?</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="overall" value="5"> Very Satisfied
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="overall" value="4"> Satisfied
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="overall" value="3"> Neutral
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="overall" value="2"> Dissatisfied
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="overall" value="1"> Very Dissatisfied
+                            </label>
+                        </div>
+                       <div class="radio">
+                            <label>
+                                <input type="radio" name="overall" value="0"> N/A
+                            </label>
+                        </div>
+                        <!-- This is something you could hide/show based on previous selection. -->
+                        <div class="show-if-poor">
+                            <label>Tell us why you had a bad experience.</label>
+                            <textarea name="explanation" id="" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <!-- Second Question -->
+                    <div class="form-group">
+                        <label for="overall">2. Do you plan on visiting again?</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="return" value="1"> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="return" value="0"> No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Submit Survey" />                        
+                    </div>
+                </form>
+                <!-- End Questions -->                
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>You are currently 90% of the way done.</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                        <span class="sr-only">90% Complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12" id="thank-you">
+                <h3>Thank You!</h3>
+                <p>Thank you for answering the questions. Your survey is completed.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
