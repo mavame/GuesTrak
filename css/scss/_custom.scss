@@ -32,3 +32,17 @@ body {
     max-width: 35em;
     margin: 0 auto;
 }
+
+// On Tablets and Desktops, display checkbox and radios inline.
+// For more breakpoints see http://www.1stwebdesigner.com/overview-of-breakpoints-in-responsive-web-design/
+@media screen and (min-width: 768px) {
+    label {
+        display: block;
+    }
+    
+    .radio,
+    .checkbox {
+        margin-right: 5px;
+        display: inline-block;
+    }
+}
